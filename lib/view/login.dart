@@ -249,7 +249,7 @@ Widget _buildText(int parametro) {
   switch (parametro) {
     case 0:
       return Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        // mainAxisAlignment: MainAxisAlignment.end, no se porque no puedo alinear el contenido
         children: [titulo1[0], titulo1[1], titulo1[2]],
       );
 
