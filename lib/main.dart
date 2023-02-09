@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto/view/inicio.dart';
 import 'package:proyecto/view/login.dart';
 
 void main() => runApp(const MyApp());
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/login",
+      initialRoute: "/",
       routes: {
-        "/login":(ctx)=> const Login(),
+        "/":(ctx)=> const Inicio(),
       },
     );
   }
