@@ -109,13 +109,13 @@ List<TextStyle?> textStyles1 = [
   const TextStyle(
     color: Color(0xFFFF6A73),
     fontFamily: 'Inter',
-    fontSize: 40.0,
+    fontSize: 35.0,
     fontWeight: FontWeight.w600,
   ),
   const TextStyle(
     color: Colors.white,
     fontFamily: 'Inter',
-    fontSize: 40.0,
+    fontSize: 35.0,
     fontWeight: FontWeight.w600,
   ),
   const TextStyle(
@@ -124,13 +124,19 @@ List<TextStyle?> textStyles1 = [
     fontSize: 30.0,
     fontWeight: FontWeight.w300,
   ),
+  const TextStyle(
+    color: Color(0xFFFF6A73),
+    fontFamily: 'Inter',
+    fontSize: 50.0,
+    fontWeight: FontWeight.w800,
+  ),
 ];
 
 List<Widget> titulo1 = [
   Text(
     "NO",
     textAlign: TextAlign.start,
-    style: textStyles1[0],
+    style: textStyles1[3],
   ),
   Text(
     "MÁS",
@@ -198,7 +204,10 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
                 margin: const EdgeInsets.symmetric(vertical: 20),
                 child: Text(
                   subtitulos[_current],
-                  style: const TextStyle(fontSize: 20, color: Colors.white),
+                  style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white),
                 ),
               )
             ],
@@ -213,7 +222,7 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
                 width: 25.0,
                 height: 9.0,
                 margin:
-                    const EdgeInsets.symmetric(vertical: 4.0, horizontal: 13.0),
+                    const EdgeInsets.symmetric(vertical: 4.0, horizontal: 1.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: (_current == entry.key
